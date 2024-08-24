@@ -30,7 +30,7 @@ def deleteTask():
 def openTaskFile():
     try:
         global task_list
-        with open("E:\PYTHON\TO-DO LIST\Tasklist.txt", "r") as taskfile:
+        with open("E:\CODSOFT\TO-DO LIST\Tasklist.txt", "r") as taskfile:
             tasks = taskfile.readlines()
 
             for task in tasks:
@@ -38,21 +38,21 @@ def openTaskFile():
                     task_list.append(task)
                     listbox.insert(END, task)
     except:
-        file=open('E:\PYTHON\TO-DO LIST\Tasklist.txt','w')
+        file=open('E:\CODSOFT\TO-DO LIST\Tasklist.txt','w')
         file.close()
 
 #icon
-Image_icon=PhotoImage(file="E:\PYTHON\TO-DO LIST\Images\Task.png")
+Image_icon=PhotoImage(file="E:\CODSOFT\TO-DO LIST\Images\Task.png")
 root.iconphoto(False,Image_icon)
 
 #top bar
-TopImage=PhotoImage(file="E:\PYTHON\TO-DO LIST\Images\Topbar.png")
+TopImage=PhotoImage(file="E:\CODSOFT\TO-DO LIST\Images\Topbar.png")
 Label(root,image=TopImage).pack()
 
-dockImage=PhotoImage(file="E:\PYTHON\TO-DO LIST\Images\dock.png")
+dockImage=PhotoImage(file="E:\CODSOFT\TO-DO LIST\Images\dock.png")
 Label(root,image=dockImage,bg="#32405b").place(x=30,y=25)
 
-noteImage=PhotoImage(file="E:\PYTHON\TO-DO LIST\Images\Task.png")
+noteImage=PhotoImage(file="E:\CODSOFT\TO-DO LIST\Images\Task.png")
 Label(root,image=noteImage,bg="#32405b").place(x=340,y=25)
 
 heading=Label(root,text="ALL TASK",font="arial 20 bold",fg="white",bg="#32405b")
