@@ -83,7 +83,7 @@ scrollbar.config(command=listbox.yview)
 
 openTaskFile()
 #delete
-Delete_icon=PhotoImage(file="E:\PYTHON\TO-DO LIST\Images\delete.png")
+Delete_icon=PhotoImage(file="E:\CODSOFT\TO-DO LIST\Images\delete.png")
 Button(root,image=Delete_icon,bd=0,command=deleteTask).pack(side=BOTTOM,pady=13)
 root.mainloop()
 
